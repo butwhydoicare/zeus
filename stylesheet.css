@@ -1,0 +1,45 @@
+body {
+	background-color:   #171717;
+	color:  white;
+	font-family: 'Poppins', sans-serif;
+	align-content: center;
+	align-self: center;
+	float: center;
+	text-align: center;
+}
+
+a {
+	align-content: center;
+	align-self: center;
+	float: center;
+	text-align: center;
+
+}
+
+
+a:after {
+	visibility: hidden;
+}
+#doc {
+	border-collapse: collapse;
+	width: 100%;
+	color:white;
+	text-align: center;
+}
+
+#doc td, #doc th {
+	border: none;
+	padding:8px;
+	text-align: center;
+}
+
+#doc tr:nth-child(even){background-color: #35393e;}
+
+#doc th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+	background-color: #1f82bf;
+	color: white;
+}
+
