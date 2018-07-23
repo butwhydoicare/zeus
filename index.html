@@ -1,0 +1,512 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>Zeus Bot</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
+</head>
+
+<body>
+
+<h1>Zeus Information and Documentation</h1>
+
+<div>
+<h3> Zeus is a multifunctional bot made in the discord.py library </h3>
+</div>
+
+<p>
+	
+
+
+</p>
+
+<object align="center-left">
+<a href="https://discordbots.org/bot/382563277202522112">
+  <img src="https://discordbots.org/api/widget/382563277202522112.svg" alt="Zeus" height="200px"/>
+</a>
+</object>
+<object align="center-right">
+<a href="https://discord.gg/652PKPS"><img src="discordlogo.png" height="200px"/></a>
+</object>
+
+<p>
+	
+
+
+</p>
+
+
+
+<table id="doc">
+	<tr>
+		<th>Command</th>
+		<th>Example</th>
+		<th>Description</th>
+		<th>Category</th>
+	</tr>
+	<tr>
+		<td>logout</td>
+		<td>z!logout</td>
+		<td>Turns Zeus off</td>
+		<td>Owner / Developer Commands</td>
+	</tr>
+	<tr>
+		<td>cdb</td>
+		<td>z!cdb</td>
+		<td>Creates an OpaqueRPG database, if one doesn't exist</td>
+		<td>Owner / Developer Commands</td>
+	</tr>
+	<tr>
+		<td>rdb</td>
+		<td>z!rdb</td>
+		<td>Resets the OpaqueRPG database, wiping it of all existing data</td>
+		<td>Owner / Developer Commands</td>
+	</tr>
+	<tr>
+		<td>ex</td>
+		<td>z!ex [code]</td>
+		<td>Executes code from Zeus directly</td>
+		<td>Owner / Developer Commands</td>
+	</tr>
+	<tr>
+		<td>ev</td>
+		<td>z!ev [code]</td>
+		<td>Evaluates code from Zeus directly</td>
+		<td>Owner / Developer Commands</td>
+	</tr>
+	<tr>
+		<td>changepresence</td>
+		<td>z!changepresence [presence]</td>
+		<td>Changes the presence of Zeus</td>
+		<td>Owner / Developer Commands</td>
+	</tr>
+	<tr>
+		<td>regserver</td>
+		<td>z!regserver</td>
+		<td>Registers an entire server for OpaqueRPG in the background</td>
+		<td>Owner / Developer Commands</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>ban</td>
+		<td>z!ban [member]</td>
+		<td>Bans a member</td>
+		<td>Admin / Moderation Commands</td>
+	</tr>
+	<tr>
+		<td>unban</td>
+		<td>z!unban [member]</td>
+		<td>Unbans a banned member</td>
+		<td>Admin / Moderation Commands</td>
+	</tr>
+	<tr>
+		<td>kick</td>
+		<td>z!kick [member]</td>
+		<td>Kicks a member</td>
+		<td>Admin / Moderation Commands</td>
+	</tr>
+	<tr>
+		<td>softban</td>
+		<td>z!softban [member]</td>
+		<td>Softbans a member | Note: This may not work in some servers, you must have a "Softbanned" role</td>
+		<td>Admin / Moderation Commands</td>
+	</tr>
+	<tr>
+		<td>unsoftban</td>
+		<td>z!unsoftban [member]</td>
+		<td>Unsoftbans a member | Note: Same problems as above</td>
+		<td>Admin / Moderation Commands</td>
+	</tr>
+	<tr>
+		<td>purge</td>
+		<td>z!purge [amount]</td>
+		<td>Deletes [amount] of messages from the channel</td>
+		<td>Admin / Moderation Commands</td>
+	</tr>
+	<tr>
+		<td>botpurge</td>
+		<td>z!botpurge [amount]</td>
+		<td>Deletes [amount] of messages exclusively sent by bots from the channel</td>
+		<td>Admin / Moderation Commands</td>
+	</tr>
+	<tr>
+		<td>nsfw</td>
+		<td>z!nsfw [on | off]</td>
+		<td>Toggles NSFW commands for the server | Note: this command is bugged in this current version, and if NSFW is disabled, sometimes it may not work to turn it on again</td>
+		<td>Admin / Moderation Commands</td>
+	</tr>
+
+	<tr>
+		<td>nsfwcheck</td>
+		<td>z!nsfwcheck</td>
+		<td>Check whether or not NSFW is allowed in this server</td>
+		<td>Admin / Moderation Commands</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>ass</td>
+		<td>z!ass</td>
+		<td>Shows a random ass</td>
+		<td>NSFW Commands</td>
+	</tr>
+	<tr>
+		<td>boobs</td>
+		<td>z!boobs</td>
+		<td>Shows random boobs</td>
+		<td>NSFW Commands</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>join</td>
+		<td>z!join [channel]</td>
+		<td>Joins a voice channel</td>
+		<td>Music Commands</td>
+	</tr>
+	<tr>
+		<td>summon</td>
+		<td>z!summon</td>
+		<td>Summons Zeus to the voice channel you're currently in</td>
+		<td>Music Commands</td>
+	</tr>
+	<tr>
+		<td>play</td>
+		<td>z!play [song name or URL]</td>
+		<td>Plays a song from a name or URL</td>
+		<td>Music Commands</td>
+	</tr>
+	<tr>
+		<td>pause</td>
+		<td>z!pause</td>
+		<td>Pauses the current playing song</td>
+		<td>Music Commands</td>
+	</tr>
+	<tr>
+		<td>resume</td>
+		<td>z!resume</td>
+		<td>Resumes the paused song</td>
+		<td>Music Commands</td>
+	</tr>
+	<tr>
+		<td>stop</td>
+		<td>z!stop</td>
+		<td>Stops the current song</td>
+		<td>Music Commands</td>
+	</tr>
+	<tr>
+		<td>skip</td>
+		<td>z!skip</td>
+		<td>Skips the current song, 3 votes needed to skip the song</td>
+		<td>Music Commands</td>
+	</tr>
+	<tr>
+		<td>playing</td>
+		<td>z!playing</td>
+		<td>Gets info about the current song</td>
+		<td>Music Commands</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>register</td>
+		<td>z!register</td>
+		<td>Registers you to OpaqueRPG if you aren't already registered</td>
+		<td>OpaqueRPG Commands</td>
+	</tr>
+	<tr>
+		<td>stats</td>
+		<td>z!stats [optional member]</td>
+		<td>Get someone's current stats, defaults to you</td>
+		<td>OpaqueRPG Commands</td>
+	</tr>
+	<tr>
+		<td>beta</td>
+		<td>z!beta</td>
+		<td>Become a beta tester if you aren't one already</td>
+		<td>OpaqueRPG Commands</td>
+	</tr>
+	<tr>
+		<td>addcr</td>
+		<td>z!addcr [amount]</td>
+		<td>Adds [amount] currency to your account</td>
+		<td>OpaqueRPG Commands (beta testers)</td>
+	</tr>
+	<tr>
+		<td>subcr</td>
+		<td>z!subcr [amount]</td>
+		<td>Subtracts [amount] currency from your account</td>
+		<td>OpaqueRPG Commands (beta testers)</td>
+	</tr>
+	<tr>
+		<td>shop</td>
+		<td>z!shop</td>
+		<td>Look in the shop for items you can buy</td>
+		<td>OpaqueRPG Commands</td>
+	</tr>
+	<tr>
+		<td>classes</td>
+		<td>z!classes</td>
+		<td>Shows a list of classes you can buy</td>
+		<td>OpaqueRPG Commands</td>
+	</tr>
+	<tr>
+		<td>buyclass</td>
+		<td>z!buyclass [classname]</td>
+		<td>Buy a class!</td>
+		<td>OpaqueRPG Commands</td>
+	</tr>
+	<tr>
+		<td>buy</td>
+		<td>z!buy [weapon | armor | shield] [item name]</td>
+		<td>Buy something from the shop [all lowercase for item names]</td>
+		<td>OpaqueRPG Commands</td>
+	</tr>
+	<tr>
+		<td>fight</td>
+		<td>z!fight [member]</td>
+		<td>If [member] is registered, engages you in a fight with them | [proper capitalization may be required, otherwise just mention them]</td>
+		<td>OpaqueRPG Commands</td>
+	</tr>
+	<tr>
+		<td>quest</td>
+		<td>z!quest</td>
+		<td>Fuck up some monsters and get money if you don't die 😎</td>
+		<td>OpaqueRPG Commands</td>
+	</tr>
+	
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+
+	<tr>
+		<td>roles</td>
+		<td>z!roles</td>
+		<td>View assignable roles for Opaque Art Server</td>
+		<td>Opaque Art Server</td>
+	</tr>
+
+	<tr>
+		<td>getrole</td>
+		<td>z!getrole [role] [capitalized as shown in command above]</td>
+		<td>Get an assignable role</td>
+		<td>Opaque Art Server</td>
+	</tr>
+
+	<tr>
+		<td>rmrole</td>
+		<td>z!rmrole [role] [same as above]</td>
+		<td>Remove an added role</td>
+		<td>Opaque Art Server</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+
+	<tr>
+		<td>spookify</td>
+		<td>z!spookify [image]</td>
+		<td>I honestly don't know, I was just screwing around with PIL and it makes images horrifying</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>mirror</td>
+		<td>z!mirror [image]</td>
+		<td>Flips an image horizontally</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>invert</td>
+		<td>z!invert [image]</td>
+		<td>Inverts the color of an image</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>insanity</td>
+		<td>z!insanity</td>
+		<td>Warning signs of insanity</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>catfact</td>
+		<td>z!catfact</td>
+		<td>Self-explanatory</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>aes</td>
+		<td>z!aes [text]</td>
+		<td>ａｅｓｔｈｅｔｉｃｓ　ａｒｅ　ｎｉｃｅ</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>avatar</td>
+		<td>z!avatar [optional user]</td>
+		<td>Shows a user's avatar, defaults to you</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>ronswanson / ron</td>
+		<td>z!ronswanson / z!ron</td>
+		<td>Some quotes from ron swanson</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>chucknorris</td>
+		<td>z!chucknorris</td>
+		<td>Random facts about Chuck Norris. They're all totally real. Totally.</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>insult</td>
+		<td>z!insult [member]</td>
+		<td>Insult someone!</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>compliment</td>
+		<td>z!compliment [member]</td>
+		<td>Compliment someone!</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>dog</td>
+		<td>z!dog</td>
+		<td>RANDOM AMAZING DOGGO PHOTOS I LOVE THEM ALL THIS IS MY FAVORITE COMMAND</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>remindme</td>
+		<td>z!remindme [minutes] [subject]</td>
+		<td>Remind yourself of something, for if you're forgetful (like me)</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>psychopass</td>
+		<td>z!psychopass [member]</td>
+		<td>Check if someone is a danger to society!</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>user</td>
+		<td>z!user [optional member]</td>
+		<td>Shows information about a user, defaults to you</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>serverinfo</td>
+		<td>z!serverinfo</td>
+		<td>Shows information about the current server</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>botinfo</td>
+		<td>z!botinfo</td>
+		<td>Shows info about the bot</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>xkcd</td>
+		<td>z!xkcd</td>
+		<td>Random xkcd comic</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>cah</td>
+		<td>z!cah [black | white]</td>
+		<td>Cards against humanity!</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>dah</td>
+		<td>z!dah [black | white]</td>
+		<td>Cards against Dystopian Society! Filled with inside jokes that you might not get</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>flip</td>
+		<td>z!flip</td>
+		<td>Flip a coin</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>8b / 8ball</td>
+		<td>z!8b [question] / z!8ball [question]</td>
+		<td>Ask the magical 8-Ball all of your measly questions!</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>skyrim / skyrimquote</td>
+		<td>z!skyrim / z!skyrimquote</td>
+		<td>Random quote from Skyrim on top of a skyrim related picture</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>poll</td>
+		<td>z!poll [question]</td>
+		<td>Ask something!</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>ping</td>
+		<td>z!ping</td>
+		<td>Pong pong ping pong ping pong pong ping!~</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>report</td>
+		<td>z!report [bug / error / problem]</td>
+		<td>Report some of Zeus's problems to me so I can fix 'em!</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>invite</td>
+		<td>z!invite</td>
+		<td>Gets the invite url for Zeus</td>
+		<td>User Commands / Misc</td>
+	</tr>
+	<tr>
+		<td>help</td>
+		<td>z!help</td>
+		<td>Brings you to this website</td>
+		<td>User Commands / Misc</td>
+	</tr>
+
+</table>
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
